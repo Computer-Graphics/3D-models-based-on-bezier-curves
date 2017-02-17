@@ -1,0 +1,236 @@
+\hypertarget{main_8cpp}{}\section{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Assignment3\+V1/\+C\+G\+Assignment3\+V1/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.cpp File Reference}
+\label{main_8cpp}\index{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Assignment3\+V1/\+C\+G\+Assignment3\+V1/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.\+cpp@{C\+:/\+Users/mudit/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+C\+G\+Assignment3\+V1/\+C\+G\+Assignment3\+V1/\+Computer\+Graphics\+Project/\+Computer\+Graphics\+Project/main.\+cpp}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpoint2}{point2}
+\item 
+struct \hyperlink{structpoint3}{point3}
+\item 
+struct \hyperlink{structface}{face}
+\item 
+struct \hyperlink{structpolymesh}{polymesh}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8cpp_a598a3330b3c21701223ee0ca14316eca}{PI}~3.\+141592
+\item 
+\#define \hyperlink{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{W\+I\+N\+D\+O\+W\+\_\+X}~640
+\item 
+\#define \hyperlink{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{W\+I\+N\+D\+O\+W\+\_\+Y}~480
+\item 
+\#define \hyperlink{main_8cpp_a52f84101ecde3e503905021fe1edb1c0}{T\+\_\+\+Interval}~0.\+001
+\item 
+\#define \hyperlink{main_8cpp_a77645e649ee61a26591e18f34cc9fb99}{Intersect\+\_\+d}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832}{handle\+\_\+keyboard} (unsigned char, int, int)
+\item 
+void \hyperlink{main_8cpp_a45973bf54454603a2c9c68afb9b06983}{handle\+\_\+mouse} (int, int)
+\item 
+void \hyperlink{main_8cpp_aff462764ace22490b28680812463b811}{Re\+Draw} ()
+\item 
+void \hyperlink{main_8cpp_a25bbf0506d524a025118d9f712e45cbc}{handle\+\_\+click} (int, int, int, int)
+\item 
+\hyperlink{structpoint2}{point2} $\ast$ \hyperlink{main_8cpp_a8413c760e69e9bdb3d397c59e74fa80d}{Lerp} (float, \hyperlink{structpoint2}{point2} $\ast$, \hyperlink{structpoint2}{point2} $\ast$)
+\item 
+\hyperlink{structpoint2}{point2} $\ast$ \hyperlink{main_8cpp_ae6686386b592d2113c7af1c7485ff7fa}{Findx} (float, \hyperlink{structpoint2}{point2} $\ast$$\ast$, int, bool del=true)
+\item 
+void \hyperlink{main_8cpp_a44f8c414cc32932302d66c319947022a}{draw\+\_\+pixel} (G\+Lint, G\+Lint, int color=1)
+\item 
+void \hyperlink{main_8cpp_a6a3ca153f0817e8ba91a023b886bb662}{Clear\+Screen} ()
+\item 
+void \hyperlink{main_8cpp_af19934224225f77888bf109d63b56770}{draw\+\_\+point} (int, int)
+\item 
+int \hyperlink{main_8cpp_a576725fd1afd677ac9afe132f896555d}{check\+Proximity} (int, int, int)
+\item 
+void \hyperlink{main_8cpp_a621dafed5f8db79ac8d9c7c3f76bcc51}{generate\+Mesh} ()
+\item 
+void \hyperlink{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}{init} ()
+\item 
+void \hyperlink{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\item 
+void \hyperlink{main_8cpp_a4442201928418c8d3e96b3e895cda0c8}{print\+\_\+off} (\hyperlink{structpolymesh}{polymesh})
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\item 
+void \hyperlink{main_8cpp_aec931ebbe228d8237d2948c0a3fdf167}{Draw\+Curve} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpoint2}{point2} $\ast$ \hyperlink{main_8cpp_ae38cf93eeacecd62b96aae8e9ba5d046}{points} \mbox{[}1000\mbox{]}
+\item 
+int \hyperlink{main_8cpp_abaef4f818f7fb7047b746a6cdd2bfdda}{num\+\_\+points} = 0
+\item 
+bool \hyperlink{main_8cpp_a2104e875bdb7c78a8bf7dfd3728459c5}{drag} = false
+\item 
+\hyperlink{structpoint2}{point2} $\ast$ \hyperlink{main_8cpp_aba255b0bfbce3ff2f2b8e8eba4e59750}{drag\+\_\+point}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8cpp_a77645e649ee61a26591e18f34cc9fb99}{}\label{main_8cpp_a77645e649ee61a26591e18f34cc9fb99} 
+\index{main.\+cpp@{main.\+cpp}!Intersect\+\_\+d@{Intersect\+\_\+d}}
+\index{Intersect\+\_\+d@{Intersect\+\_\+d}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Intersect\+\_\+d}{Intersect\_d}}
+{\footnotesize\ttfamily \#define Intersect\+\_\+d~1}
+
+\hypertarget{main_8cpp_a598a3330b3c21701223ee0ca14316eca}{}\label{main_8cpp_a598a3330b3c21701223ee0ca14316eca} 
+\index{main.\+cpp@{main.\+cpp}!PI@{PI}}
+\index{PI@{PI}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+141592}
+
+\hypertarget{main_8cpp_a52f84101ecde3e503905021fe1edb1c0}{}\label{main_8cpp_a52f84101ecde3e503905021fe1edb1c0} 
+\index{main.\+cpp@{main.\+cpp}!T\+\_\+\+Interval@{T\+\_\+\+Interval}}
+\index{T\+\_\+\+Interval@{T\+\_\+\+Interval}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{T\+\_\+\+Interval}{T\_Interval}}
+{\footnotesize\ttfamily \#define T\+\_\+\+Interval~0.\+001}
+
+\hypertarget{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788}{}\label{main_8cpp_ab83a5d29cf7742497ed64dbcbab6a788} 
+\index{main.\+cpp@{main.\+cpp}!W\+I\+N\+D\+O\+W\+\_\+X@{W\+I\+N\+D\+O\+W\+\_\+X}}
+\index{W\+I\+N\+D\+O\+W\+\_\+X@{W\+I\+N\+D\+O\+W\+\_\+X}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+X}{WINDOW\_X}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+O\+W\+\_\+X~640}
+
+\hypertarget{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f}{}\label{main_8cpp_a41d6125f63ec24f88253daf46f47ac3f} 
+\index{main.\+cpp@{main.\+cpp}!W\+I\+N\+D\+O\+W\+\_\+Y@{W\+I\+N\+D\+O\+W\+\_\+Y}}
+\index{W\+I\+N\+D\+O\+W\+\_\+Y@{W\+I\+N\+D\+O\+W\+\_\+Y}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+Y}{WINDOW\_Y}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+O\+W\+\_\+Y~480}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a576725fd1afd677ac9afe132f896555d}{}\label{main_8cpp_a576725fd1afd677ac9afe132f896555d} 
+\index{main.\+cpp@{main.\+cpp}!check\+Proximity@{check\+Proximity}}
+\index{check\+Proximity@{check\+Proximity}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{check\+Proximity()}{checkProximity()}}
+{\footnotesize\ttfamily int check\+Proximity (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a6a3ca153f0817e8ba91a023b886bb662}{}\label{main_8cpp_a6a3ca153f0817e8ba91a023b886bb662} 
+\index{main.\+cpp@{main.\+cpp}!Clear\+Screen@{Clear\+Screen}}
+\index{Clear\+Screen@{Clear\+Screen}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Clear\+Screen()}{ClearScreen()}}
+{\footnotesize\ttfamily void Clear\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{}\label{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269} 
+\index{main.\+cpp@{main.\+cpp}!display@{display}}
+\index{display@{display}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a44f8c414cc32932302d66c319947022a}{}\label{main_8cpp_a44f8c414cc32932302d66c319947022a} 
+\index{main.\+cpp@{main.\+cpp}!draw\+\_\+pixel@{draw\+\_\+pixel}}
+\index{draw\+\_\+pixel@{draw\+\_\+pixel}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily void draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{G\+Lint}]{x,  }\item[{G\+Lint}]{y,  }\item[{int}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_af19934224225f77888bf109d63b56770}{}\label{main_8cpp_af19934224225f77888bf109d63b56770} 
+\index{main.\+cpp@{main.\+cpp}!draw\+\_\+point@{draw\+\_\+point}}
+\index{draw\+\_\+point@{draw\+\_\+point}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+point()}{draw\_point()}}
+{\footnotesize\ttfamily void draw\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_aec931ebbe228d8237d2948c0a3fdf167}{}\label{main_8cpp_aec931ebbe228d8237d2948c0a3fdf167} 
+\index{main.\+cpp@{main.\+cpp}!Draw\+Curve@{Draw\+Curve}}
+\index{Draw\+Curve@{Draw\+Curve}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Draw\+Curve()}{DrawCurve()}}
+{\footnotesize\ttfamily void Draw\+Curve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_ae6686386b592d2113c7af1c7485ff7fa}{}\label{main_8cpp_ae6686386b592d2113c7af1c7485ff7fa} 
+\index{main.\+cpp@{main.\+cpp}!Findx@{Findx}}
+\index{Findx@{Findx}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Findx()}{Findx()}}
+{\footnotesize\ttfamily \hyperlink{structpoint2}{point2} $\ast$ Findx (\begin{DoxyParamCaption}\item[{float}]{t,  }\item[{\hyperlink{structpoint2}{point2} $\ast$$\ast$}]{p,  }\item[{int}]{num,  }\item[{bool}]{del = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a621dafed5f8db79ac8d9c7c3f76bcc51}{}\label{main_8cpp_a621dafed5f8db79ac8d9c7c3f76bcc51} 
+\index{main.\+cpp@{main.\+cpp}!generate\+Mesh@{generate\+Mesh}}
+\index{generate\+Mesh@{generate\+Mesh}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{generate\+Mesh()}{generateMesh()}}
+{\footnotesize\ttfamily void generate\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a25bbf0506d524a025118d9f712e45cbc}{}\label{main_8cpp_a25bbf0506d524a025118d9f712e45cbc} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+click@{handle\+\_\+click}}
+\index{handle\+\_\+click@{handle\+\_\+click}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+click()}{handle\_click()}}
+{\footnotesize\ttfamily void handle\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{state,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832}{}\label{main_8cpp_a4d9d9db5f38409fa1e99c8cabcc68832} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+keyboard@{handle\+\_\+keyboard}}
+\index{handle\+\_\+keyboard@{handle\+\_\+keyboard}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+keyboard()}{handle\_keyboard()}}
+{\footnotesize\ttfamily void handle\+\_\+keyboard (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a45973bf54454603a2c9c68afb9b06983}{}\label{main_8cpp_a45973bf54454603a2c9c68afb9b06983} 
+\index{main.\+cpp@{main.\+cpp}!handle\+\_\+mouse@{handle\+\_\+mouse}}
+\index{handle\+\_\+mouse@{handle\+\_\+mouse}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+mouse()}{handle\_mouse()}}
+{\footnotesize\ttfamily void handle\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947}{}\label{main_8cpp_a02fd73d861ef2e4aabb38c0c9ff82947} 
+\index{main.\+cpp@{main.\+cpp}!init@{init}}
+\index{init@{init}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a8413c760e69e9bdb3d397c59e74fa80d}{}\label{main_8cpp_a8413c760e69e9bdb3d397c59e74fa80d} 
+\index{main.\+cpp@{main.\+cpp}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily \hyperlink{structpoint2}{point2} $\ast$ Lerp (\begin{DoxyParamCaption}\item[{float}]{t,  }\item[{\hyperlink{structpoint2}{point2} $\ast$}]{a,  }\item[{\hyperlink{structpoint2}{point2} $\ast$}]{b }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_a4442201928418c8d3e96b3e895cda0c8}{}\label{main_8cpp_a4442201928418c8d3e96b3e895cda0c8} 
+\index{main.\+cpp@{main.\+cpp}!print\+\_\+off@{print\+\_\+off}}
+\index{print\+\_\+off@{print\+\_\+off}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+\_\+off()}{print\_off()}}
+{\footnotesize\ttfamily void print\+\_\+off (\begin{DoxyParamCaption}\item[{\hyperlink{structpolymesh}{polymesh}}]{p }\end{DoxyParamCaption})}
+
+\hypertarget{main_8cpp_aff462764ace22490b28680812463b811}{}\label{main_8cpp_aff462764ace22490b28680812463b811} 
+\index{main.\+cpp@{main.\+cpp}!Re\+Draw@{Re\+Draw}}
+\index{Re\+Draw@{Re\+Draw}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Re\+Draw()}{ReDraw()}}
+{\footnotesize\ttfamily void Re\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_a2104e875bdb7c78a8bf7dfd3728459c5}{}\label{main_8cpp_a2104e875bdb7c78a8bf7dfd3728459c5} 
+\index{main.\+cpp@{main.\+cpp}!drag@{drag}}
+\index{drag@{drag}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{drag}{drag}}
+{\footnotesize\ttfamily bool drag = false}
+
+\hypertarget{main_8cpp_aba255b0bfbce3ff2f2b8e8eba4e59750}{}\label{main_8cpp_aba255b0bfbce3ff2f2b8e8eba4e59750} 
+\index{main.\+cpp@{main.\+cpp}!drag\+\_\+point@{drag\+\_\+point}}
+\index{drag\+\_\+point@{drag\+\_\+point}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{drag\+\_\+point}{drag\_point}}
+{\footnotesize\ttfamily \hyperlink{structpoint2}{point2}$\ast$ drag\+\_\+point}
+
+\hypertarget{main_8cpp_abaef4f818f7fb7047b746a6cdd2bfdda}{}\label{main_8cpp_abaef4f818f7fb7047b746a6cdd2bfdda} 
+\index{main.\+cpp@{main.\+cpp}!num\+\_\+points@{num\+\_\+points}}
+\index{num\+\_\+points@{num\+\_\+points}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{num\+\_\+points}{num\_points}}
+{\footnotesize\ttfamily int num\+\_\+points = 0}
+
+\hypertarget{main_8cpp_ae38cf93eeacecd62b96aae8e9ba5d046}{}\label{main_8cpp_ae38cf93eeacecd62b96aae8e9ba5d046} 
+\index{main.\+cpp@{main.\+cpp}!points@{points}}
+\index{points@{points}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily \hyperlink{structpoint2}{point2}$\ast$ points\mbox{[}1000\mbox{]}}
+
